@@ -39,8 +39,9 @@ public class RemarkCommand extends Command {
 
     public static final String MESSAGE_REMARK_NOT_EDITED = "Remark's TEXT hasn't changed.";
     public static final String MESSAGE_REMARK_UPDATED_SUCCESS = "Remark updated: %1$s";
-    public static final String MESSAGE_REMARK_REMOVED_SUCCESS = "Remark has been removed.";
+    public static final String MESSAGE_REMARK_REMOVED_SUCCESS = "Remark has been removed.\n Updated %1$s";
     public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book.";
+    public static final String VALIDATION_REGEX = "^$";
 
     private final Index index;
     private final RemarkPersonDescriptor remarkPersonDescriptor;
@@ -76,7 +77,12 @@ public class RemarkCommand extends Command {
         model.setPerson(personToRemark, remarkedPerson);
         model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
         model.commitAddressBook();
-        return new CommandResult(String.format(MESSAGE_REMARK_UPDATED_SUCCESS, remarkedPerson));
+
+        if(isRemarkEmpty(remarkedPerson.getRemark().value)){
+            return new CommandResult(String.format(MESSAGE_REMARK_REMOVED_SUCCESS, remarkedPerson));
+        }else {
+            return new CommandResult(String.format(MESSAGE_REMARK_UPDATED_SUCCESS, remarkedPerson));
+        }
     }
 
     /**
@@ -112,6 +118,13 @@ public class RemarkCommand extends Command {
         RemarkCommand e = (RemarkCommand) other;
         return index.equals(e.index)
                 && remarkPersonDescriptor.equals(e.remarkPersonDescriptor);
+    }
+
+    /**
+     * Returns true if remark is empty string
+     */
+    public static boolean isRemarkEmpty(String test) {
+        return test.matches(VALIDATION_REGEX);
     }
 
     /**

@@ -9,12 +9,12 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
  */
 public class Remark {
 
-    public static final String MESSAGE_CONSTRAINTS = "Remark needs to be text (at-least one non-white-space char).";
+    public static final String MESSAGE_CONSTRAINTS = "Remark needs to be text.";
 
     /**
-     * String should have at-least one non-white-space char
+     * Should be String.
      */
-    public static final String VALIDATION_REGEX = "^(?=\\s*\\S).*$";
+    public static final String VALIDATION_REGEX = "^.*$";
 
     public final String value;
 
