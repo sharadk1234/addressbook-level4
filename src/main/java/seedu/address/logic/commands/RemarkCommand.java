@@ -138,7 +138,6 @@ public class RemarkCommand extends Command {
 
         /**
          * Copy constructor.
-         * A defensive copy of {@code tags} is used internally.
          */
         public RemarkPersonDescriptor(RemarkPersonDescriptor toCopy) {
             setRemark(toCopy.remark);
