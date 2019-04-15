@@ -36,9 +36,10 @@ e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
 * *`list`* : lists all contacts
 * **`add`**`n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01` : adds a contact named `John Doe` to the Address Book.
 * **`delete`**`3` : deletes the 3rd contact shown in the current list
-* **`undo`**`4` : undo the previous command 
-* **`redo`**`5` : redo ur last move
-* **`clear`**`6` : clear all the list 
+* **`undo`**`4`   : undo the previous command 
+* **`redo`**`5`   : redo ur last move
+* **`clear`**`6`  : clear all the list 
+* **`remark`**`7` : add or delete a remark
 * *`exit`* : exits the app
 
 .  Refer to <<Features>> for details of each command.
