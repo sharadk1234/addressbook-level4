@@ -291,6 +291,7 @@ e.g. `find James Jake`
 * *Help* : `help`
 * *Select* : `select INDEX` +
 e.g.`select 2`
+* * Remark* `remark 1 r/He is an important client -> add a remark "He is an important clent remark on 1st person` + `remark 3 r/ -> removes the remark from person 3`
 * *History* : `history`
 * *Undo* : `undo`
 * *Redo* : `redo`
