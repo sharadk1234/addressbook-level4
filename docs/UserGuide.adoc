@@ -236,7 +236,7 @@ User you are adding remark can have a privous remark which will be updated when 
 ====
 
 Demonstration of adding a remark to the 1st person in the AddressbookApp
-image::remarkadd.png
+image::docs/images/remarkadd.png
 
 
 To remove remark from an user at a specific index 2 - remark 2 r/
