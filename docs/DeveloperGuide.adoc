@@ -682,8 +682,8 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 
 
 //tag::remarkcommand[]
-=== Adding and Removing remark command
-=== Current Implementation of Remark Commands
+=== Adding and Removing remark command Full implementation
+
 
 The remark command is facilitated by VersionedAddressBook. It extends AddressBook with an remark history, stored internally as an `remarkBookStateList` and currentStatePointer. Additionally, it implements the following operations:
 ** VersionedRemarkBook#commit() — Saves the current address book state in its history.
@@ -713,6 +713,13 @@ The following sequence diagram shows how the undo operation works:
 
 image::D6.png[width="1000"]
 
+Step 5. The user then decides to execute the command list. Commands that do not modify the address book or remark book, such as list, will usually not call Model#commitAddressBook() and Model#commitRemarkBook(), Model#undoAddressBook() or Model#undoRemarkBook(). Thus, the addressBookStateList and remarkBookStateList remain unchanged.
+
+image::D7.png[width="800"]
+
+Step 6. The user executes clear, which calls Model#commitAddressBook(). Since the currentStatePointer is not pointing at the end of the addressBookStateList, all address book states after the currentStatePointer will be purged. We designed it this way because it no longer makes sense to redo the add n/David …​ command. This is the behavior that most modern desktop applications follow.
+
+image::D8.png[width="800"]
 
 === Summary of the Remark Command
 ** # Adapted EditCommand's code to RemarkCommand in /logic/commands
