@@ -16,7 +16,7 @@ endif::[]
 
 * The AddressbookApp is basically an enhanced version of the Addressbook-level4 which is build keeping in mind the importance of the remark function. 
 * The AddressbookApp is a  GUI(Graphical User Interface) but most of the user interactions happen using a CLI (Command Line Interface).
-* It is *written in OOP fashion*. It provides a *reasonably well-written* code example that is *significantly bigger* (around 6 KLoC)than what students usually write in beginner-level SE modules.
+* Intrested ? Click on the <<UserGuide#, User Guide>> to explore more !
 
 
 == Site Map
