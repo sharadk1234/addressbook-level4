@@ -1069,6 +1069,12 @@ _{ more test cases ... }_
    Expected: Similar to previous.
 .. Other incorrect remark command to try : `remark -1 r/`
 
+=== Remark Unit Tests 
+  ** void execute_updateRemark_success(){}
+  
+  ** void execute_removeRemark_sucess() {}
+  
+  **. void execute_invalidPersonIndex_failure() {}
 
 
 === Saving data
