@@ -219,6 +219,9 @@ The `redo` command fails as there are no `undo` commands executed previously.
 Clears all entries from the address book. +
 Format: `clear`
 
+//tag:: remarkfeature[]
+=== Adding a remark : 'remark'
+
 === Exiting the program : `exit`
 
 Exits the program. +
