@@ -1036,10 +1036,40 @@ _{ more test cases ... }_
    Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated.
 .. Test case: `delete 0` +
    Expected: No person is deleted. Error details shown in the status message. Status bar remains the same.
+.. Other incorrect delete commands to try: `delete`, `delete x` (where x is larger than the list size), `delete James`, `delete list` +
+   Expected: Similar to previous.
+
+.. Prerequisites: List all persons using the `list` command. Multiple persons in the list.
+.. Test case: `delete 1` +
+   Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated.
+.. Test case: `delete 0` +
+   Expected: No person is deleted. Error details shown in the status message. Status bar remains the same.
 .. Other incorrect delete commands to try: `delete`, `delete x` (where x is larger than the list size) _{give more}_ +
    Expected: Similar to previous.
 
-_{ more test cases ... }_
+
+// tag::remarkmanualtesting[]
+=== Adding a remark to a person
+
+. Add a remark to a person from contact list.
+.. Prerequisite: There are multiple persons in the contact list.
+.. Test case: `remark 3 r/ Drinks a lot of Coffee` +
+   Expected: Third person will have a remark - Drinks a lot of Coffee
+.. Other incorrect remark commands to try:  `remark x r/ Drinks coffee`(where x is larger than the contact list size)
+   Expected: Similar to previous.
+.. Other incorrect remark command to try : `remark -1 r/Drinks Coffee`
+
+=== Removing a remark from a person
+
+. Remove a remark to a person from contact list.
+.. Prerequisite: There are multiple persons in the contact list.
+.. Test case: `remark 7 r/ ` +
+ Expected: Seventh person will have a remark deleted from his profile 
+ . Other incorrect remark commands to try:  `remark x r/`(where x is larger than the contact list size)
+   Expected: Similar to previous.
+.. Other incorrect remark command to try : `remark -1 r/`
+
+
 
 === Saving data
 
