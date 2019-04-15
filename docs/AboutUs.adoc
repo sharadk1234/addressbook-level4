@@ -12,7 +12,7 @@ We are a team based in the http://www.comp.nus.edu.sg[School of Computing, Natio
 
 === Sharad Kochhar
 
-image:: sharadk1234.png [width="150", align="left"]
+image::sharadk1234.png[width="150", align="left"]
 
 
 Role: Developer +
