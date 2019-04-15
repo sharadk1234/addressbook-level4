@@ -994,7 +994,65 @@ Use case ends.
 +
 Use case resumes at step 2.
 
-_{More to be added}_
+=== Use case: View history
+
+
+User requests to view the history of previous commands.
+
+AddressbookApp displays a history of previous commands in reverse chronological order.
+
+Use case ends.
+
+Extensions
+
+1a. The history list is empty.
+
+Use case ends.
+
+=== Use case: Undo
+
+
+User requests to undo the previous undoable command.
+
+AddressbookApp undoes the previous undoable command.
+
+Use case ends.
+
+Extensions
+
+1a. There is no previous undoable command.
+
+Use case ends.
+
+=== Use case: Remark
+User want to add or remove remark from the addressbook
+
+=== Use case: Redo
+
+User requests to redo the previous undo.
+
+AddressbookApp  add or remove remove at a specific address.
+
+Use case ends.
+
+Extensions
+
+1a. There is no previous undo command.
+
+Use case ends.
+
+=== Use case: Exit app
+
+User requests to exit the app.
+
+AddressbookApp requests to confirm the exit.
+
+User confirms the exit.
+
+Use case ends.
+
+
+
 
 [appendix]
 == Non Functional Requirements
