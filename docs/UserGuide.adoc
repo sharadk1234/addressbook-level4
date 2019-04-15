@@ -220,7 +220,7 @@ Clears all entries from the address book. +
 Format: `clear`
 
 //tag:: remarkfeature[]
-=== Adding a remark : 'remark'
+=== Adding a remark : `remark`
 
 === Exiting the program : `exit`
 
