@@ -721,6 +721,29 @@ Step 6. The user executes clear, which calls Model#commitAddressBook(). Since th
 
 image::D8.png[width="800"]
 
+==== Design Considerations
+
+===== Aspect: How Remark command executes
+
+* **Alternative 1 (current choice):** Saves the entire address book and remark book.
+** Pros: Easy to implement.
+** Cons: May have performance issues in terms of memory usage.
+* **Alternative 2:** Individual command knows how to undo/redo by itself.
+** Pros: Will use less memory (e.g. for `delete`, just save the person being deleted).
+** Cons: We must ensure that the implementation of each individual command are correct.
+
+===== Aspect: Data structure to support the undo/redo commands
+
+
+* **Alternative 1 (current choice):** Use a list to store the history of address book states.
+** Pros: Easy for new Students who are in their first year
+** Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both `HistoryManager` and `VersionedAddressBook`.
+* **Alternative 2:** Use `HistoryManager` for undo/redo
+** Pros: We do not need to maintain a separate list, and just reuse what is already in the codebase.
+** Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as `HistoryManager` now needs to do two different things.
+
+
+
 === Summary of the Remark Command
 ** # Adapted EditCommand's code to RemarkCommand in /logic/commands
     Added `PREFIX_REMARK` to CliSyntax.java
