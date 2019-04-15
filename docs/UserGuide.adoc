@@ -220,7 +220,7 @@ Clears all entries from the address book. +
 Format: `clear`
 
 //tag:: remarkfeature[]
-=== Adding a remark command  : `remark`
+=== Adding/Removing a remark command  : `remark`
 Add a remark also remove a remark from the person in the AddressBookApp
 
 To add a remark to an user at a specific index 1 - remark 1 r/whatever is your remark!
@@ -229,7 +229,13 @@ To add a remark to an user at a specific index 1 - remark 1 r/whatever is your r
 * The index refers to the index number shown in the displayed contact list.
 * The index *must be a positive integer* 1, 2, 3,.........
 ****
+
 To remove remark from an user at a specific index 2 - remark 2 r/
+****
+* Remove remark at a specific `INDEX`
+* The index refers to the index number shown in the displayed contact list.
+* The index *must be a positive integer* 1, 2, 3,.........
+****
 
 === Exiting the program : `exit`
 
