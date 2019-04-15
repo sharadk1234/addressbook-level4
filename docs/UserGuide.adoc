@@ -223,8 +223,12 @@ Format: `clear`
 === Adding a remark command  : `remark`
 Add a remark also remove a remark from the person in the AddressBookApp
 
-To add a remark to an user at a specific index 1 - remark 1 r/what ever is your reamrk!
-
+To add a remark to an user at a specific index 1 - remark 1 r/whatever is your remark!
+****
+* Add remark at a specific `INDEX`
+* The index refers to the index number shown in the displayed contact list.
+* The index *must be a positive integer* 1, 2, 3,.........
+****
 To remove remark from an user at a specific index 2 - remark 2 r/
 
 === Exiting the program : `exit`
