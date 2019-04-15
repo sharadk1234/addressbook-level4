@@ -237,7 +237,8 @@ User you are adding remark can have a privous remark which will be updated when 
 
 Demonstration of adding a remark to the 1st person in the AddressbookApp
 
-image::remarkadd.png[width="700"]
+image::remarkadd.png[width="800"]
+
 
 To remove remark from an user at a specific index 2 - remark 2 r/
 ****
@@ -245,6 +246,10 @@ To remove remark from an user at a specific index 2 - remark 2 r/
 * The index refers to the index number shown in the displayed contact list.
 * The index *must be a positive integer* 1, 2, 3,.........
 ****
+
+Demonstration of removing a remark to the 2ndt person in the AddressbookApp and after remark is removed the remark field is empty
+
+image::remarkremove.png[width="800"]
 
 === Exiting the program : `exit`
 
