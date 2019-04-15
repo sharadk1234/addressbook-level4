@@ -31,9 +31,12 @@ endif::[]
 * <<ContactUs#, Contact Us>>
 
 == Acknowledgements
+
 *The original source of the code (AddressBook-Level4) was created by the SE-EDU intiative.
+
 * Some parts of this sample application were inspired by the excellent http://code.makery.ch/library/javafx-8-tutorial/[Java FX tutorial] by
 _Marco Jakob_.
+
 * Libraries used: https://github.com/TestFX/TestFX[TextFX], https://github.com/FasterXML/jackson[Jackson], https://github.com/google/guava[Guava], https://github.com/junit-team/junit5[JUnit5]
 
 == Licence : link:LICENSE[MIT]
