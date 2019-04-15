@@ -682,8 +682,8 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 
 
 //tag::remarkcommand[]
-=== adding/removing remark command
-====Cuurrent Implementation steps describe to immplemeny Remark Commands
+=== Adding and Removing remark command
+=== Current Implementation steps describe to immplemeny Remark Commands
 
 [[GetStartedProgramming-RemarkCommand]]
 === Creating a new command: `remark`
