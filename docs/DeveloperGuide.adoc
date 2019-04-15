@@ -679,6 +679,9 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 * Solution
 ** See this https://github.com/se-edu/addressbook-level4/pull/594[PR] for the full solution.
 ****
+//tag::remarkcommand[]
+=== adding/removing remark command
+====Cuurrent Implementation steps describe to immplemeny Remark Commands
 
 [[GetStartedProgramming-RemarkCommand]]
 === Creating a new command: `remark`
@@ -686,10 +689,6 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 By creating this command, you will get a chance to learn how to implement a feature end-to-end, touching all major components of the app.
 
 *Scenario:* You are a software maintainer for `addressbook`, as the former developer team has moved on to new projects. The current users of your application have a list of new feature requests that they hope the software will eventually have. The most popular request is to allow adding additional comments/notes about a particular contact, by providing a flexible `remark` field for each contact, rather than relying on tags alone. After designing the specification for the `remark` command, you are convinced that this feature is worth implementing. Your job is to implement the `remark` command.
-
-//tag::remarkcommand[]
-=== adding/removing remark command
-====Cuurrent Implementation steps describe to immplemeny Remark Commands
 
 ==== Description
 Edits the remark for a person specified in the `INDEX`. +
