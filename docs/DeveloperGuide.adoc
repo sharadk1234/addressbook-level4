@@ -694,7 +694,7 @@ Given below is an example usage scenario and how the undo/redo mechanism behaves
 
 Step 1. The user launches the application for the first time. The `VersionedAddressBook` will be initialized with the initial remark book state, and the `currentStatePointer` pointing to that single remark book state.
 
-addressbook-level4/docs/images/UndoRedoStartingStateListDiagram.png
+image::addressbook-level4/docs/images/UndoRedoStartingStateListDiagram.png[width="800"]
 
 
 
