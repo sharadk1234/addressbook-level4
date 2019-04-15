@@ -943,26 +943,54 @@ _{More to be added}_
 [discrete]
 === Use case: Delete person
 
-*MSS*
+User requests to delete a specific contact in the list.
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
-+
+AddressBookApp deletes the contact.
+
 Use case ends.
+
+Extensions
+
+** The contact list is empty.
+
+Use case ends.
+
+** The given index is invalid.
+
+** AddressBookApp shows an error message.
+
+
+
+
+==Use case: Clear contact list
 
 *Extensions*
 
-[none]
-* 2a. The list is empty.
+
+User requests to clear the contact list.
+
+TheRealApp clears the entire contact list.
+
+Use case ends.
+
+** The list displayed is invalid.
+
+** AddressBookApp shows an error message.
+
+**  User requests for the valid list.
+
+** AddressbookApp displays the requested list.
+
+Use case resumes at step 1.
+
+** The list is empty.
 +
 Use case ends.
 
-* 3a. The given index is invalid.
+** The given index is invalid.
 +
 [none]
-** 3a1. AddressBook shows an error message.
+** AddressBook shows an error message.
 +
 Use case resumes at step 2.
 
