@@ -679,6 +679,8 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 * Solution
 ** See this https://github.com/se-edu/addressbook-level4/pull/594[PR] for the full solution.
 ****
+
+
 //tag::remarkcommand[]
 === adding/removing remark command
 ====Cuurrent Implementation steps describe to immplemeny Remark Commands
