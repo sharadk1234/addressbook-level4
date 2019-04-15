@@ -231,13 +231,13 @@ There is no need to save manually.
 
 // tag::dataencryption[]
 === Encrypting data files `[coming in v2.0]`
+The databases will be encrpted.
 
 // tag:: Login using Password[]
 === Login using Password `[coming in v2.0]`
-Basically in this feature User can set password which will be required to login in the application
+Basically in this feature User can set password which will be required to login in the application.
 
-_{explain how the user can enable/disable data encryption}_
-// end::dataencryption[]
+
 
 == FAQ
 
