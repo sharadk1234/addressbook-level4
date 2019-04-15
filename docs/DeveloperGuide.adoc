@@ -709,6 +709,11 @@ Step 4.  The user now decides that  removing remark the person was a mistake, an
 
 image::D5.png[width="800"]
 
+The following sequence diagram shows how the undo operation works:
+
+image::D6.png[width="1000"]
+
+
 === Summary of the Remark Command
 ** # Adapted EditCommand's code to RemarkCommand in /logic/commands
     Added `PREFIX_REMARK` to CliSyntax.java
