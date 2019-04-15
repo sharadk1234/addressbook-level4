@@ -962,7 +962,7 @@ Use case ends.
 
 
 
-==Use case: Clear contact list
+=== Use case: Clear contact list
 
 *Extensions*
 
@@ -1014,22 +1014,6 @@ Windows, Linux, Unix, OS-X
 [[private-contact-detail]] Private contact detail::
 A contact detail that is not meant to be shared with others
 
-[appendix]
-== Product Survey
-
-*Product Name*
-
-Author: ...
-
-Pros:
-
-* ...
-* ...
-
-Cons:
-
-* ...
-* ...
 
 [appendix]
 == Instructions for Manual Testing
