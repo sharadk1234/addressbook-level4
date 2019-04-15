@@ -11,12 +11,9 @@ We are a team based in the http://www.comp.nus.edu.sg[School of Computing, Natio
 == Project Team
 
 === Sharad Kochhar
-<<<<<<< HEAD
-image:: sharadk1234.png [width="150", align="left"]
-=======
-image:: sharadk1234.png[width="150", align="left"]
 
->>>>>>> 2e53b5691451de59e585503f6d92666fed2e34a0
+image:: sharadk1234.png [width="150", align="left"]
+
 
 Role: Developer +
 Responsibilities: Implementing remark command (Deleting and updating remark tag) + UI + Code Quality + Unit Test
