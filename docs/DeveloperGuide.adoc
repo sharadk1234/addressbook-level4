@@ -696,6 +696,7 @@ Step 1. The user launches the application for the first time. The `VersionedAddr
 
 image::remarkstatelistdiagram.png[width="800"]
 
+Step 2. The user executes `remark 5 r/` command to add remark to the 5th person in the address book. The remark command calls `Model#commitBook()`, causing the modified state of the address book after the `remark 5` command executes to be saved in the `addressBookStateList` and `remarkBookStateList`, and the `remarkbookStatePointer` is shifted to the newly inserted address book and remark book state.
 
 
 
