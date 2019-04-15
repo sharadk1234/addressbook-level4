@@ -683,14 +683,16 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 
 //tag::remarkcommand[]
 === Adding and Removing remark command
-=== Current Implementation steps describe to immplemeny Remark Commands
+=== Current Implementation of Remark Commands
 
+The remark command is facilitated by VersionedAddressBook. It extends AddressBook with an remark history, stored internally as an `remarkBookStateList` and currentStatePointer. Additionally, it implements the following operations:
+** VersionedRemarkBook#commit() — Saves the current address book state in its history.
 
+These operations are exposed in the `Model` interface as Model#commitRemarkBook(), Model#undoRemarksBook().
 
+Given below is an example usage scenario and how the undo/redo mechanism behaves at each step.
 
-
-
-
+Step 1. The user launches the application for the first time. The `VersionedAddressBook` will be initialized with the initial remark book state, and the `currentStatePointer` pointing to that single remark book state.
 
 
 
