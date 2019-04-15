@@ -705,6 +705,10 @@ Step 3. The user executes remark remove  from a person in the remark list. The r
 image::D4.png[width="800"]
 
 
+Step 4.  The user now decides that  removing remark the person was a mistake, and decides to undo that action by executing the undo command. The undo command will call Model#undoRemarkBook(), which will shift the currentStatePointer once to the left, pointing it to the previous address book state, and restores the address book to that state.
+
+image::D5.png[width="800"]
+
 === Summary of the Remark Command
 ** # Adapted EditCommand's code to RemarkCommand in /logic/commands
     Added `PREFIX_REMARK` to CliSyntax.java
