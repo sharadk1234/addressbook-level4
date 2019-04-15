@@ -36,6 +36,9 @@ e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
 * *`list`* : lists all contacts
 * **`add`**`n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01` : adds a contact named `John Doe` to the Address Book.
 * **`delete`**`3` : deletes the 3rd contact shown in the current list
+* **`undo`**`4` : undo the previous command 
+* **`redo`**`5` : redo ur last move
+* **`clear`**`6` : clear all the list 
 * *`exit`* : exits the app
 
 .  Refer to <<Features>> for details of each command.
@@ -79,14 +82,6 @@ Format: `list`
 
 Edits an existing person in the address book. +
 Format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]...`
-
-=== Undoes the privous command : `undo`
-
-=== Redo the privous move : `redo`
-
-== Add or Delete a Remark on the user in the AddressbookApp : `remark`
-
-=== Exit from the app : `exit`
 
 ****
 * Edits the person at the specified `INDEX`. The index refers to the index number shown in the displayed person list. The index *must be a positive integer* 1, 2, 3, ...
