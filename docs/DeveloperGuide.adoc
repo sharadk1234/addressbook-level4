@@ -685,6 +685,38 @@ Do take a look at <<Design-Storage>> before attempting to modify the `Storage` c
 === Adding and Removing remark command
 === Current Implementation steps describe to immplemeny Remark Commands
 
+
+
+
+
+
+
+
+
+
+
+=== Summary of the Remark Command
+** # Adapted EditCommand's code to RemarkCommand in /logic/commands
+    Added `PREFIX_REMARK` to CliSyntax.java
+    [Adapted Address's code to Remark in /model/person]     -- tweaks remain (handle blank input)
+        > Import Remark in RemarkCommand
+    Added `Remark remark` to Person.java
+    [Adapted isAnyFieldEdited() to isRemarkEdited() in RemarkCommand]
+    [Adapted EditCommandParser's code to RemarkCommandParser in /logic/parser]      -- tweaks required (remove extra )
+    Added `parseRemark()` to ParserUtil.java
+    Added usage of `RemarkCommandParser` to AddressBoookParser.java
+
+    [Updated Person's attributes with remark in EditCommand]
+    [Updated Person's attributes with remark in AddCommandParser]
+        [Sample remark data added to SampleDataUtil]
+    [Updated Person's attributes with remark in JasonAdaptedPerson]
+    Now in PersonBuilder, addded PersonBuilder withRemark (unused as of now)
+
+    ** Error removed from --
+        JsonAdaptedPersonTest
+        PersonListPanelTest
+        Addressbook.json in /data/
+
 [[GetStartedProgramming-RemarkCommand]]
 === Creating a new command: `remark`
 
