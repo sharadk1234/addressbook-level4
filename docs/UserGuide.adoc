@@ -230,6 +230,15 @@ To add a remark to an user at a specific index 1 - remark 1 r/whatever is your r
 * The index *must be a positive integer* 1, 2, 3,.........
 ****
 
+[NOTE]
+==== 
+User you are adding remark can have a privous remark which will be updated when you add the new remark.
+====
+
+Demonstration of adding a remark to the 1st person in the AddressbookApp
+image::remarkadd.png
+
+
 To remove remark from an user at a specific index 2 - remark 2 r/
 ****
 * Remove remark at a specific `INDEX`
