@@ -1074,7 +1074,7 @@ _{ more test cases ... }_
   
   ** void execute_removeRemark_sucess() {}
   
-  **. void execute_invalidPersonIndex_failure() {}
+  ** void execute_invalidPersonIndex_failure() {}
 
 
 === Saving data
