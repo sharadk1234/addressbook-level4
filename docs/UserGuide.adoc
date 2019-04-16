@@ -1,4 +1,4 @@
-= AddressBookApp - User Guide
+= AddressBookApp  📒 - User Guide
 :site-section: UserGuide
 :toc:
 :toc-title:
